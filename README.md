@@ -11,7 +11,7 @@ Yep. There are tons of loaders that do useful stuff like dependency management o
 Usage
 -----
 
-'''javascript
+```javascript
 ondemand.require("./js/bigScript.js", function()){
 	// first handler called just after script is loaded and executed
 	console.log("bigScript.js available");
@@ -27,5 +27,4 @@ ondemand.require("./js/bigScript.js", function()){
 	// third handler executes immediately
 	console.log("bigScript.js available");
 });
-
-'''
+```
