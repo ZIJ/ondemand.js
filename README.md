@@ -14,17 +14,17 @@ Usage
 ```javascript
 ondemand.require("./js/bigScript.js", function()){
 	// first handler called just after script is loaded and executed
-	console.log("bigScript.js available");
+	console.log("bigScript.js available 1");
 });
 
 ondemand.require("./js/bigScript.js", function()){
 	// second handler runs just after first one 
-	console.log("bigScript.js available");
+	console.log("bigScript.js available 2");
 });
 
 // somewhen later
 ondemand.require("./js/bigScript.js", function()){
 	// third handler executes immediately
-	console.log("bigScript.js available");
+	console.log("bigScript.js available 3");
 });
 ```
